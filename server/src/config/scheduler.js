@@ -12,7 +12,7 @@ export const startHistoryCron = () => {
   cron.schedule('0 * * * *', async () => {
     console.log('Running hourly coin history fetch...');
 
-    try {
+    try { 
       const response = await axios.get(GET_COINS_ENDPOINT, {
         params: {
           vs_currency: 'usd',

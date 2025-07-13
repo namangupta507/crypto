@@ -12,7 +12,7 @@ const app = express();
 const PORT=process.env.PORT||3000;
 
 app.use(cors({
-  origin: 'https://crypto-zeta-ivory.vercel.app/', // replace with your actual frontend URL
+  origin: 'https://crypto-zeta-ivory.vercel.app', // replace with your actual frontend URL
   credentials: true // if you're sending cookies
 }));
 
